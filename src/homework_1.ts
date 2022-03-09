@@ -74,8 +74,15 @@ let mapDates = new Map()
 let setDates = new Set();
 
 arrayProto.forEach(array => {
-  mapDates.set(array.dt, array)
   setDates.add(array.dt);
+})
+
+function filter(array: IProtoDates[], dateFilter: string | unknown): IProtoDates[] {
+  return array.filter(el => el.dt === dateFilter)
+}
+
+setDates.forEach(date => {
+  mapDates.set(date, filter(arrayProto, date))
 })
 
 console.log(mapDates, setDates);
