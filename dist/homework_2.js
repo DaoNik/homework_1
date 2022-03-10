@@ -24,7 +24,7 @@ const houses = [
     ["56", "приватизирован", "5 собственников", "Ленина"],
     ["25", "не приватизирован", "2 собственника", "Ленина"]
 ];
-const chooseHouse = ([square, _isPrivatization, _numQwner, street]) => {
+const chooseHouse = ([square, , , street]) => {
     return square === '56' || (+square <= 40 && street === 'Ленина');
 };
 const mapRightHouse = new Map();

@@ -25,7 +25,7 @@ const houses: string[][] = [
   ["25", "не приватизирован", "2 собственника", "Ленина"]
 ]
 
-const chooseHouse = ([square, _isPrivatization, _numQwner, street]: string[]): boolean => {
+const chooseHouse = ([square, , , street]: string[]): boolean => {
   return square === '56' || (+square <= 40 && street === 'Ленина')
 };
 
