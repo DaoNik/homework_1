@@ -1,2 +1,2 @@
-# Homework_1
+# Homework
 Файл на ts в папке src
